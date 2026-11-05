@@ -1,11 +1,4 @@
-# ganti npm ci -> npm install
-
-git add package-lock.json .github/workflows/publish.yml
-git commit -m "fix: add lockfile only"
-git push origin main
-
-git tag v1.0.1
-git push origin v1.0.1name: Publish to NPM
+name: Publish to NPM
 on:
   push:
     tags:
@@ -23,4 +16,8 @@ jobs:
           node-version: '22'
           registry-url: 'https://registry.npmjs.org'
       - run: npm install
+      - name: Set version from tag
+        run: |
+          TAG=${GITHUB_REF#refs/tags/v}
+          npm version $TAG --no-git-tag-version --allow-same-version
       - run: npm publish --provenance --access public
