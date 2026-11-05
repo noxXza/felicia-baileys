@@ -1,4 +1,11 @@
-name: Publish to NPM
+# ganti npm ci -> npm install
+
+git add package-lock.json .github/workflows/publish.yml
+git commit -m "fix: add lockfile only"
+git push origin main
+
+git tag v1.0.1
+git push origin v1.0.1name: Publish to NPM
 on:
   push:
     tags:
