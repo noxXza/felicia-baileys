@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://raw.githubusercontent.com/noxXza/data/refs/heads/main/felicia-baileys.png" width="400" alt="Felicia Banner" />
+  <img src="https://raw.githubusercontent.com/noxXza/data/refs/heads/main/felicia-baileys.jpg" width="400" alt="Felicia Banner" />
   <br><br>
 
   <h1>felicia-baileys</h1>
