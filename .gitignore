@@ -1,6 +1,0 @@
-node_modules/
-auth_info/
-*.log
-.session
-tmp/
-package-lock.json
